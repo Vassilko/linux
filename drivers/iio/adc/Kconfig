@@ -157,4 +157,13 @@ config VIPERBOARD_ADC
 	  Say yes here to access the ADC part of the Nano River
 	  Technologies Viperboard.
 
+config MCP300X
+        tristate "Microchip Technology MCP3004/08"
+        depends on SPI
+        help
+         Say yes here to build support for Microchip Technology's MCP3004 or
+         MCP3008 analog to digital converter.
+
+         This driver can also be built as a module. If so, the module will be
+         called mcp300x.
 endmenu
